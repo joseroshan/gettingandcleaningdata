@@ -48,7 +48,7 @@ getData <- function(type, features){
 saveResult <- function (data,name){
   print(paste("Saving data", name))
   file <- paste(result_folder, "/", name,".txt" ,sep="")
-  write.csv(data,file)
+  write.table(data,file,row.name=FALSE)
 }
 
 
