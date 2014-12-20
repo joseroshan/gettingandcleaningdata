@@ -1,4 +1,4 @@
-debug
+
 file <- "data.zip"
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 data_path <- "UCI HAR Dataset"
@@ -47,7 +47,7 @@ getData <- function(type, features){
 ##saves the data into the result folder
 saveResult <- function (data,name){
   print(paste("Saving data", name))
-  file <- paste(result_folder, "/", name,".csv" ,sep="")
+  file <- paste(result_folder, "/", name,".txt" ,sep="")
   write.csv(data,file)
 }
 
